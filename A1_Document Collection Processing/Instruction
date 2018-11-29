@@ -1,0 +1,16 @@
+The project is written to process two TREC standard format document collections: trectext format and trecweb format.
+
+First, I implement two classes to read individual documents from trectext and trecweb format collection files, remove all the HTML tags and retrieve its doc number and content, store the content into an char array.
+Second, I implement WordTokenizer class to split a sequence of text into individual word tokens by replacing all characters that are not numbers or letters to blank space and splitting the words by blank space.
+Third, I implement WordNormalizer class to transform the word uppercase characters into lowercase and conduct stemming on each word by Porter’s Algorithm.
+Then, I implement StopWordRemover class to filter stop words.
+
+The result after running my HW1main class:
+  
+totaly document count:  503473
+text corpus running time: 3.5119166666666666 min
+totaly document count:  198362
+web corpus running time: 1.7173 min
+
+The java version is JDK 1.8.
+
