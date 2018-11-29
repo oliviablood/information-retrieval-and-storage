@@ -1,0 +1,26 @@
+Environment: CPU: 3.1 GHz Intel Core i5
+            Memory: 8GB
+            Java Version: 9
+            IDE: Eclipse
+
+How to read my codes: load the project into Eclipse; create folders and add dataset according to the Path class;
+
+Result:
+
+TrecWeb: totaly document count:  198361
+index web corpus running time: 0.5080166666666667 min
+ >> the token "acow" appeared in 3 documents and 3 times in total
+       lists-092-3952951    154962         1
+       lists-092-4113429    154963         1
+      lists-108-11347927    186005         1
+load index & retrieve running time: 0.13838333333333333 min
+
+TrecText: totaly document count:  503473
+index text corpus running time: 1.5458666666666667 min
+ >> the token "yhoo" appeared in 5 documents and 5 times in total
+        NYT19990208.0397    291084         1
+        NYT19990405.0253    313383         1
+        NYT20000717.0201    477372         1
+        NYT20000927.0406    502700         1
+        NYT20000928.0343    503145         1
+load index & retrieve running time: 0.54765 min
