@@ -23,6 +23,8 @@ public class MyIndexWriter {
 
 	// store all docNo names in the arraylist
 	private ArrayList<String> docNoNames = new ArrayList<>();
+	
+	//key: term value: the document the term is in and term frequency
 	private HashMap<String, ArrayList<Integer>> termMap = new HashMap<>();
 
 	private File outputIndFile;
@@ -39,7 +41,8 @@ public class MyIndexWriter {
 		fw = new FileWriter(outputIndFile);
 		docNum = 0;
 	}
-
+	
+	//create the index for a document represented by the docno and the content
 	public void IndexADocument(String docno, String content) throws IOException {
 		// you are strongly suggested to build the index by installments
 		// you need to assign the new non-negative integer docId to each document, which will be used in MyIndexReader
